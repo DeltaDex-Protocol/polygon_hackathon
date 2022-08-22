@@ -1,7 +1,7 @@
 // SPDX-License-Identifier: MIT
 pragma solidity ^0.8.15;
 
-import "../dependencies/chainlink/AggregatorV3Interface.sol";
+import "contracts/dependencies/chainlink/AggregatorV3Interface.sol";
 
 /// @title Chainlink Data Feed
 /// @author Volatility Smilers @Polygon Buidl It Hackathon

@@ -1,10 +1,10 @@
 // SPDX-License-Identifier: MIT
 pragma solidity ^0.8.15;
 
-import "../dependencies/prb-math/PRBMathSD59x18.sol";
+import "contracts/dependencies/prb-math/PRBMathSD59x18.sol";
 
 /// @title Statistics 
-/// @author Volatility Smilers
+/// @author Volatility Smilers @Polygon Buidl It Hackathon
 /// @notice probability density function (pdf), cumulative distribution function (cdf), error function (erf)
 /// @dev sourced from https://www.johndcook.com/blog/cpp_phi/
 /// @dev link: https://github.com/DeltaDex-Protocol/research/blob/1048345ba7b75634892f4312d4e7d043d753377b/cdf.cpp
