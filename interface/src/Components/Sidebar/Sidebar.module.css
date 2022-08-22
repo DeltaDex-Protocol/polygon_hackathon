@@ -1,0 +1,44 @@
+.user-profile {
+    padding-left: 20px;
+    padding-top: 20px;
+    border-radius: 20px;
+    /*box-shadow: rgba(149, 157, 165, 0.2) 0px 0px 30px;*/
+/*    position: fixed;
+    margin-bottom: 70%;*/
+
+}
+.user-profile-label {
+    position: relative;
+    width: 150px;
+    height: 150px;
+    border-radius: 100%;
+    display: flex;
+    cursor: pointer;
+    margin-top: -85px;
+    outline: 10px solid white;
+}
+.user-profile-label img {
+    width: 100%;
+    object-fit: cover;
+    border-radius: 100%;
+}
+.username {
+    font-size: 1.2rem;
+    font-weight: bolder;
+}
+.user-email {
+    font-size: 0.8rem;
+    font-weight: lighter;
+}
+.user-birthday {
+    font-size: 0.8rem;
+}
+.profile-icon-box {
+    position: absolute;
+    right: 5px;
+    bottom: 0;
+    border-radius: 100%;
+    padding: 5px 4.5px;
+    outline: 5px solid white;
+    display: flex;
+}

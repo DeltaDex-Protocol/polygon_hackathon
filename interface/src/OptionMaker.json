@@ -1,0 +1,1803 @@
+[
+  {
+    "inputs": [],
+    "stateMutability": "nonpayable",
+    "type": "constructor"
+  },
+  {
+    "inputs": [],
+    "name": "PRBMathSD59x18__AbsInputTooSmall",
+    "type": "error"
+  },
+  {
+    "inputs": [],
+    "name": "PRBMathSD59x18__DivInputTooSmall",
+    "type": "error"
+  },
+  {
+    "inputs": [
+      {
+        "internalType": "uint256",
+        "name": "rAbs",
+        "type": "uint256"
+      }
+    ],
+    "name": "PRBMathSD59x18__DivOverflow",
+    "type": "error"
+  },
+  {
+    "inputs": [
+      {
+        "internalType": "int256",
+        "name": "x",
+        "type": "int256"
+      }
+    ],
+    "name": "PRBMathSD59x18__Exp2InputTooBig",
+    "type": "error"
+  },
+  {
+    "inputs": [
+      {
+        "internalType": "int256",
+        "name": "x",
+        "type": "int256"
+      }
+    ],
+    "name": "PRBMathSD59x18__ExpInputTooBig",
+    "type": "error"
+  },
+  {
+    "inputs": [
+      {
+        "internalType": "int256",
+        "name": "x",
+        "type": "int256"
+      }
+    ],
+    "name": "PRBMathSD59x18__LogInputTooSmall",
+    "type": "error"
+  },
+  {
+    "inputs": [],
+    "name": "PRBMathSD59x18__MulInputTooSmall",
+    "type": "error"
+  },
+  {
+    "inputs": [
+      {
+        "internalType": "uint256",
+        "name": "rAbs",
+        "type": "uint256"
+      }
+    ],
+    "name": "PRBMathSD59x18__MulOverflow",
+    "type": "error"
+  },
+  {
+    "inputs": [
+      {
+        "internalType": "int256",
+        "name": "x",
+        "type": "int256"
+      }
+    ],
+    "name": "PRBMathSD59x18__SqrtNegativeInput",
+    "type": "error"
+  },
+  {
+    "inputs": [
+      {
+        "internalType": "int256",
+        "name": "x",
+        "type": "int256"
+      }
+    ],
+    "name": "PRBMathSD59x18__SqrtOverflow",
+    "type": "error"
+  },
+  {
+    "inputs": [
+      {
+        "internalType": "uint256",
+        "name": "prod1",
+        "type": "uint256"
+      }
+    ],
+    "name": "PRBMath__MulDivFixedPointOverflow",
+    "type": "error"
+  },
+  {
+    "inputs": [
+      {
+        "internalType": "uint256",
+        "name": "prod1",
+        "type": "uint256"
+      },
+      {
+        "internalType": "uint256",
+        "name": "denominator",
+        "type": "uint256"
+      }
+    ],
+    "name": "PRBMath__MulDivOverflow",
+    "type": "error"
+  },
+  {
+    "inputs": [],
+    "name": "T",
+    "type": "error"
+  },
+  {
+    "inputs": [],
+    "name": "DAI",
+    "outputs": [
+      {
+        "internalType": "address",
+        "name": "",
+        "type": "address"
+      }
+    ],
+    "stateMutability": "view",
+    "type": "function"
+  },
+  {
+    "inputs": [
+      {
+        "components": [
+          {
+            "internalType": "address",
+            "name": "tokenA",
+            "type": "address"
+          },
+          {
+            "internalType": "address",
+            "name": "tokenB",
+            "type": "address"
+          },
+          {
+            "internalType": "uint256",
+            "name": "tokenA_balance",
+            "type": "uint256"
+          },
+          {
+            "internalType": "uint256",
+            "name": "tokenB_balance",
+            "type": "uint256"
+          },
+          {
+            "internalType": "uint256",
+            "name": "amount",
+            "type": "uint256"
+          },
+          {
+            "internalType": "uint256",
+            "name": "expiry",
+            "type": "uint256"
+          },
+          {
+            "internalType": "uint256",
+            "name": "fees",
+            "type": "uint256"
+          },
+          {
+            "internalType": "uint256",
+            "name": "perDay",
+            "type": "uint256"
+          },
+          {
+            "internalType": "uint256",
+            "name": "hedgeFee",
+            "type": "uint256"
+          },
+          {
+            "internalType": "uint256",
+            "name": "lastHedgeTimeStamp",
+            "type": "uint256"
+          },
+          {
+            "components": [
+              {
+                "internalType": "int256",
+                "name": "K",
+                "type": "int256"
+              },
+              {
+                "internalType": "int256",
+                "name": "T",
+                "type": "int256"
+              },
+              {
+                "internalType": "int256",
+                "name": "r",
+                "type": "int256"
+              },
+              {
+                "internalType": "int256",
+                "name": "sigma",
+                "type": "int256"
+              },
+              {
+                "internalType": "int256",
+                "name": "m",
+                "type": "int256"
+              },
+              {
+                "internalType": "int256",
+                "name": "v",
+                "type": "int256"
+              },
+              {
+                "internalType": "int256",
+                "name": "lam",
+                "type": "int256"
+              }
+            ],
+            "internalType": "struct JDM.JDMOptionParams",
+            "name": "parameters",
+            "type": "tuple"
+          }
+        ],
+        "internalType": "struct JDM.JDM_Call_params",
+        "name": "_params",
+        "type": "tuple"
+      }
+    ],
+    "name": "JDM_CALL_START_REPLICATION",
+    "outputs": [
+      {
+        "internalType": "address",
+        "name": "",
+        "type": "address"
+      },
+      {
+        "internalType": "uint256",
+        "name": "",
+        "type": "uint256"
+      }
+    ],
+    "stateMutability": "nonpayable",
+    "type": "function"
+  },
+  {
+    "inputs": [
+      {
+        "internalType": "address",
+        "name": "",
+        "type": "address"
+      },
+      {
+        "internalType": "address",
+        "name": "",
+        "type": "address"
+      },
+      {
+        "internalType": "uint256",
+        "name": "",
+        "type": "uint256"
+      }
+    ],
+    "name": "JDM_Calls",
+    "outputs": [
+      {
+        "internalType": "address",
+        "name": "tokenA",
+        "type": "address"
+      },
+      {
+        "internalType": "address",
+        "name": "tokenB",
+        "type": "address"
+      },
+      {
+        "internalType": "uint256",
+        "name": "tokenA_balance",
+        "type": "uint256"
+      },
+      {
+        "internalType": "uint256",
+        "name": "tokenB_balance",
+        "type": "uint256"
+      },
+      {
+        "internalType": "uint256",
+        "name": "amount",
+        "type": "uint256"
+      },
+      {
+        "internalType": "uint256",
+        "name": "expiry",
+        "type": "uint256"
+      },
+      {
+        "internalType": "uint256",
+        "name": "fees",
+        "type": "uint256"
+      },
+      {
+        "internalType": "uint256",
+        "name": "perDay",
+        "type": "uint256"
+      },
+      {
+        "internalType": "uint256",
+        "name": "hedgeFee",
+        "type": "uint256"
+      },
+      {
+        "internalType": "uint256",
+        "name": "lastHedgeTimeStamp",
+        "type": "uint256"
+      },
+      {
+        "components": [
+          {
+            "internalType": "int256",
+            "name": "K",
+            "type": "int256"
+          },
+          {
+            "internalType": "int256",
+            "name": "T",
+            "type": "int256"
+          },
+          {
+            "internalType": "int256",
+            "name": "r",
+            "type": "int256"
+          },
+          {
+            "internalType": "int256",
+            "name": "sigma",
+            "type": "int256"
+          },
+          {
+            "internalType": "int256",
+            "name": "m",
+            "type": "int256"
+          },
+          {
+            "internalType": "int256",
+            "name": "v",
+            "type": "int256"
+          },
+          {
+            "internalType": "int256",
+            "name": "lam",
+            "type": "int256"
+          }
+        ],
+        "internalType": "struct JDM.JDMOptionParams",
+        "name": "parameters",
+        "type": "tuple"
+      }
+    ],
+    "stateMutability": "view",
+    "type": "function"
+  },
+  {
+    "inputs": [
+      {
+        "internalType": "address",
+        "name": "pair",
+        "type": "address"
+      },
+      {
+        "internalType": "address",
+        "name": "user",
+        "type": "address"
+      },
+      {
+        "internalType": "uint256",
+        "name": "ID",
+        "type": "uint256"
+      }
+    ],
+    "name": "JDM_HEDGE_CALL",
+    "outputs": [
+      {
+        "internalType": "uint256",
+        "name": "",
+        "type": "uint256"
+      }
+    ],
+    "stateMutability": "nonpayable",
+    "type": "function"
+  },
+  {
+    "inputs": [
+      {
+        "internalType": "address",
+        "name": "pair",
+        "type": "address"
+      },
+      {
+        "internalType": "address",
+        "name": "user",
+        "type": "address"
+      },
+      {
+        "internalType": "uint256",
+        "name": "ID",
+        "type": "uint256"
+      }
+    ],
+    "name": "JDM_HEDGE_PUT",
+    "outputs": [
+      {
+        "internalType": "uint256",
+        "name": "",
+        "type": "uint256"
+      }
+    ],
+    "stateMutability": "nonpayable",
+    "type": "function"
+  },
+  {
+    "inputs": [
+      {
+        "components": [
+          {
+            "internalType": "address",
+            "name": "tokenA",
+            "type": "address"
+          },
+          {
+            "internalType": "address",
+            "name": "tokenB",
+            "type": "address"
+          },
+          {
+            "internalType": "uint256",
+            "name": "tokenA_balance",
+            "type": "uint256"
+          },
+          {
+            "internalType": "uint256",
+            "name": "tokenB_balance",
+            "type": "uint256"
+          },
+          {
+            "internalType": "uint256",
+            "name": "amount",
+            "type": "uint256"
+          },
+          {
+            "internalType": "uint256",
+            "name": "expiry",
+            "type": "uint256"
+          },
+          {
+            "internalType": "uint256",
+            "name": "fees",
+            "type": "uint256"
+          },
+          {
+            "internalType": "uint256",
+            "name": "perDay",
+            "type": "uint256"
+          },
+          {
+            "internalType": "uint256",
+            "name": "hedgeFee",
+            "type": "uint256"
+          },
+          {
+            "internalType": "uint256",
+            "name": "lastHedgeTimeStamp",
+            "type": "uint256"
+          },
+          {
+            "components": [
+              {
+                "internalType": "int256",
+                "name": "K",
+                "type": "int256"
+              },
+              {
+                "internalType": "int256",
+                "name": "T",
+                "type": "int256"
+              },
+              {
+                "internalType": "int256",
+                "name": "r",
+                "type": "int256"
+              },
+              {
+                "internalType": "int256",
+                "name": "sigma",
+                "type": "int256"
+              },
+              {
+                "internalType": "int256",
+                "name": "m",
+                "type": "int256"
+              },
+              {
+                "internalType": "int256",
+                "name": "v",
+                "type": "int256"
+              },
+              {
+                "internalType": "int256",
+                "name": "lam",
+                "type": "int256"
+              }
+            ],
+            "internalType": "struct JDM.JDMOptionParams",
+            "name": "parameters",
+            "type": "tuple"
+          }
+        ],
+        "internalType": "struct JDM.JDM_Put_params",
+        "name": "_params",
+        "type": "tuple"
+      }
+    ],
+    "name": "JDM_PUT_START_REPLICATION",
+    "outputs": [
+      {
+        "internalType": "address",
+        "name": "",
+        "type": "address"
+      },
+      {
+        "internalType": "uint256",
+        "name": "",
+        "type": "uint256"
+      }
+    ],
+    "stateMutability": "nonpayable",
+    "type": "function"
+  },
+  {
+    "inputs": [
+      {
+        "internalType": "address",
+        "name": "",
+        "type": "address"
+      },
+      {
+        "internalType": "address",
+        "name": "",
+        "type": "address"
+      },
+      {
+        "internalType": "uint256",
+        "name": "",
+        "type": "uint256"
+      }
+    ],
+    "name": "JDM_Puts",
+    "outputs": [
+      {
+        "internalType": "address",
+        "name": "tokenA",
+        "type": "address"
+      },
+      {
+        "internalType": "address",
+        "name": "tokenB",
+        "type": "address"
+      },
+      {
+        "internalType": "uint256",
+        "name": "tokenA_balance",
+        "type": "uint256"
+      },
+      {
+        "internalType": "uint256",
+        "name": "tokenB_balance",
+        "type": "uint256"
+      },
+      {
+        "internalType": "uint256",
+        "name": "amount",
+        "type": "uint256"
+      },
+      {
+        "internalType": "uint256",
+        "name": "expiry",
+        "type": "uint256"
+      },
+      {
+        "internalType": "uint256",
+        "name": "fees",
+        "type": "uint256"
+      },
+      {
+        "internalType": "uint256",
+        "name": "perDay",
+        "type": "uint256"
+      },
+      {
+        "internalType": "uint256",
+        "name": "hedgeFee",
+        "type": "uint256"
+      },
+      {
+        "internalType": "uint256",
+        "name": "lastHedgeTimeStamp",
+        "type": "uint256"
+      },
+      {
+        "components": [
+          {
+            "internalType": "int256",
+            "name": "K",
+            "type": "int256"
+          },
+          {
+            "internalType": "int256",
+            "name": "T",
+            "type": "int256"
+          },
+          {
+            "internalType": "int256",
+            "name": "r",
+            "type": "int256"
+          },
+          {
+            "internalType": "int256",
+            "name": "sigma",
+            "type": "int256"
+          },
+          {
+            "internalType": "int256",
+            "name": "m",
+            "type": "int256"
+          },
+          {
+            "internalType": "int256",
+            "name": "v",
+            "type": "int256"
+          },
+          {
+            "internalType": "int256",
+            "name": "lam",
+            "type": "int256"
+          }
+        ],
+        "internalType": "struct JDM.JDMOptionParams",
+        "name": "parameters",
+        "type": "tuple"
+      }
+    ],
+    "stateMutability": "view",
+    "type": "function"
+  },
+  {
+    "inputs": [
+      {
+        "components": [
+          {
+            "internalType": "int256",
+            "name": "S",
+            "type": "int256"
+          },
+          {
+            "internalType": "int256",
+            "name": "K",
+            "type": "int256"
+          },
+          {
+            "internalType": "int256",
+            "name": "T",
+            "type": "int256"
+          },
+          {
+            "internalType": "int256",
+            "name": "r",
+            "type": "int256"
+          },
+          {
+            "internalType": "int256",
+            "name": "sigma",
+            "type": "int256"
+          },
+          {
+            "internalType": "int256",
+            "name": "m",
+            "type": "int256"
+          },
+          {
+            "internalType": "int256",
+            "name": "v",
+            "type": "int256"
+          },
+          {
+            "internalType": "int256",
+            "name": "lam",
+            "type": "int256"
+          }
+        ],
+        "internalType": "struct JDM.MertonInput",
+        "name": "_params",
+        "type": "tuple"
+      }
+    ],
+    "name": "MERTON_PUT",
+    "outputs": [
+      {
+        "internalType": "int256",
+        "name": "p",
+        "type": "int256"
+      },
+      {
+        "internalType": "int256",
+        "name": "delta",
+        "type": "int256"
+      }
+    ],
+    "stateMutability": "view",
+    "type": "function"
+  },
+  {
+    "inputs": [
+      {
+        "internalType": "address",
+        "name": "",
+        "type": "address"
+      }
+    ],
+    "name": "PairFees",
+    "outputs": [
+      {
+        "internalType": "uint256",
+        "name": "tokenA",
+        "type": "uint256"
+      },
+      {
+        "internalType": "uint256",
+        "name": "tokenB",
+        "type": "uint256"
+      }
+    ],
+    "stateMutability": "view",
+    "type": "function"
+  },
+  {
+    "inputs": [
+      {
+        "internalType": "address",
+        "name": "",
+        "type": "address"
+      },
+      {
+        "internalType": "uint256",
+        "name": "",
+        "type": "uint256"
+      }
+    ],
+    "name": "PairUsers",
+    "outputs": [
+      {
+        "internalType": "address",
+        "name": "",
+        "type": "address"
+      }
+    ],
+    "stateMutability": "view",
+    "type": "function"
+  },
+  {
+    "inputs": [
+      {
+        "internalType": "address",
+        "name": "",
+        "type": "address"
+      }
+    ],
+    "name": "Pairs",
+    "outputs": [
+      {
+        "internalType": "address",
+        "name": "tokenA",
+        "type": "address"
+      },
+      {
+        "internalType": "uint256",
+        "name": "tokenA_balance",
+        "type": "uint256"
+      },
+      {
+        "internalType": "address",
+        "name": "tokenB",
+        "type": "address"
+      },
+      {
+        "internalType": "uint256",
+        "name": "tokenB_balance",
+        "type": "uint256"
+      }
+    ],
+    "stateMutability": "view",
+    "type": "function"
+  },
+  {
+    "inputs": [
+      {
+        "internalType": "address",
+        "name": "",
+        "type": "address"
+      },
+      {
+        "internalType": "uint256",
+        "name": "",
+        "type": "uint256"
+      }
+    ],
+    "name": "Positions",
+    "outputs": [
+      {
+        "internalType": "uint256",
+        "name": "",
+        "type": "uint256"
+      }
+    ],
+    "stateMutability": "view",
+    "type": "function"
+  },
+  {
+    "inputs": [],
+    "name": "USDC",
+    "outputs": [
+      {
+        "internalType": "address",
+        "name": "",
+        "type": "address"
+      }
+    ],
+    "stateMutability": "view",
+    "type": "function"
+  },
+  {
+    "inputs": [],
+    "name": "USDT",
+    "outputs": [
+      {
+        "internalType": "address",
+        "name": "",
+        "type": "address"
+      }
+    ],
+    "stateMutability": "view",
+    "type": "function"
+  },
+  {
+    "inputs": [],
+    "name": "WETH",
+    "outputs": [
+      {
+        "internalType": "address",
+        "name": "",
+        "type": "address"
+      }
+    ],
+    "stateMutability": "view",
+    "type": "function"
+  },
+  {
+    "inputs": [
+      {
+        "internalType": "address",
+        "name": "pair",
+        "type": "address"
+      },
+      {
+        "internalType": "uint256",
+        "name": "ID",
+        "type": "uint256"
+      }
+    ],
+    "name": "WithdrawJDM_CALL",
+    "outputs": [
+      {
+        "internalType": "uint256",
+        "name": "",
+        "type": "uint256"
+      },
+      {
+        "internalType": "uint256",
+        "name": "",
+        "type": "uint256"
+      }
+    ],
+    "stateMutability": "nonpayable",
+    "type": "function"
+  },
+  {
+    "inputs": [
+      {
+        "internalType": "address",
+        "name": "pair",
+        "type": "address"
+      },
+      {
+        "internalType": "uint256",
+        "name": "ID",
+        "type": "uint256"
+      }
+    ],
+    "name": "WithdrawJDM_PUT",
+    "outputs": [
+      {
+        "internalType": "uint256",
+        "name": "",
+        "type": "uint256"
+      },
+      {
+        "internalType": "uint256",
+        "name": "",
+        "type": "uint256"
+      }
+    ],
+    "stateMutability": "nonpayable",
+    "type": "function"
+  },
+  {
+    "inputs": [],
+    "name": "_factory",
+    "outputs": [
+      {
+        "internalType": "address",
+        "name": "",
+        "type": "address"
+      }
+    ],
+    "stateMutability": "view",
+    "type": "function"
+  },
+  {
+    "inputs": [
+      {
+        "internalType": "uint256",
+        "name": "",
+        "type": "uint256"
+      }
+    ],
+    "name": "allPairs",
+    "outputs": [
+      {
+        "internalType": "address",
+        "name": "",
+        "type": "address"
+      }
+    ],
+    "stateMutability": "view",
+    "type": "function"
+  },
+  {
+    "inputs": [
+      {
+        "internalType": "address",
+        "name": "pair",
+        "type": "address"
+      },
+      {
+        "internalType": "address",
+        "name": "user",
+        "type": "address"
+      },
+      {
+        "internalType": "uint256",
+        "name": "ID",
+        "type": "uint256"
+      },
+      {
+        "internalType": "int256",
+        "name": "price",
+        "type": "int256"
+      }
+    ],
+    "name": "calculateNewDeltaCall",
+    "outputs": [
+      {
+        "internalType": "int256",
+        "name": "",
+        "type": "int256"
+      }
+    ],
+    "stateMutability": "view",
+    "type": "function"
+  },
+  {
+    "inputs": [
+      {
+        "internalType": "address",
+        "name": "pair",
+        "type": "address"
+      },
+      {
+        "internalType": "address",
+        "name": "user",
+        "type": "address"
+      },
+      {
+        "internalType": "uint256",
+        "name": "ID",
+        "type": "uint256"
+      },
+      {
+        "internalType": "int256",
+        "name": "price",
+        "type": "int256"
+      }
+    ],
+    "name": "calculateNewDeltaPut",
+    "outputs": [
+      {
+        "internalType": "int256",
+        "name": "",
+        "type": "int256"
+      }
+    ],
+    "stateMutability": "view",
+    "type": "function"
+  },
+  {
+    "inputs": [
+      {
+        "internalType": "int256",
+        "name": "expiry",
+        "type": "int256"
+      },
+      {
+        "internalType": "int256",
+        "name": "fees",
+        "type": "int256"
+      },
+      {
+        "internalType": "int256",
+        "name": "perDay",
+        "type": "int256"
+      }
+    ],
+    "name": "calculatePerHedgeFee",
+    "outputs": [
+      {
+        "internalType": "int256",
+        "name": "",
+        "type": "int256"
+      }
+    ],
+    "stateMutability": "pure",
+    "type": "function"
+  },
+  {
+    "inputs": [
+      {
+        "internalType": "address",
+        "name": "pair",
+        "type": "address"
+      },
+      {
+        "internalType": "address",
+        "name": "user",
+        "type": "address"
+      },
+      {
+        "internalType": "uint256",
+        "name": "ID",
+        "type": "uint256"
+      }
+    ],
+    "name": "calculatePreviousDeltaCall",
+    "outputs": [
+      {
+        "internalType": "int256",
+        "name": "",
+        "type": "int256"
+      }
+    ],
+    "stateMutability": "view",
+    "type": "function"
+  },
+  {
+    "inputs": [
+      {
+        "internalType": "address",
+        "name": "pair",
+        "type": "address"
+      },
+      {
+        "internalType": "address",
+        "name": "user",
+        "type": "address"
+      },
+      {
+        "internalType": "uint256",
+        "name": "ID",
+        "type": "uint256"
+      }
+    ],
+    "name": "calculatePreviousDeltaPut",
+    "outputs": [
+      {
+        "internalType": "int256",
+        "name": "",
+        "type": "int256"
+      }
+    ],
+    "stateMutability": "view",
+    "type": "function"
+  },
+  {
+    "inputs": [
+      {
+        "internalType": "int256",
+        "name": "SECONDS",
+        "type": "int256"
+      }
+    ],
+    "name": "convertSecondstoYear",
+    "outputs": [
+      {
+        "internalType": "int256",
+        "name": "",
+        "type": "int256"
+      }
+    ],
+    "stateMutability": "pure",
+    "type": "function"
+  },
+  {
+    "inputs": [
+      {
+        "internalType": "int256",
+        "name": "YEAR",
+        "type": "int256"
+      }
+    ],
+    "name": "convertYeartoSeconds",
+    "outputs": [
+      {
+        "internalType": "int256",
+        "name": "",
+        "type": "int256"
+      }
+    ],
+    "stateMutability": "pure",
+    "type": "function"
+  },
+  {
+    "inputs": [
+      {
+        "internalType": "address",
+        "name": "tokenA",
+        "type": "address"
+      },
+      {
+        "internalType": "address",
+        "name": "tokenB",
+        "type": "address"
+      }
+    ],
+    "name": "createPair",
+    "outputs": [
+      {
+        "internalType": "address",
+        "name": "",
+        "type": "address"
+      }
+    ],
+    "stateMutability": "nonpayable",
+    "type": "function"
+  },
+  {
+    "inputs": [
+      {
+        "components": [
+          {
+            "internalType": "int256",
+            "name": "S",
+            "type": "int256"
+          },
+          {
+            "internalType": "int256",
+            "name": "K",
+            "type": "int256"
+          },
+          {
+            "internalType": "int256",
+            "name": "T",
+            "type": "int256"
+          },
+          {
+            "internalType": "int256",
+            "name": "r",
+            "type": "int256"
+          },
+          {
+            "internalType": "int256",
+            "name": "sigma",
+            "type": "int256"
+          },
+          {
+            "internalType": "int256",
+            "name": "m",
+            "type": "int256"
+          },
+          {
+            "internalType": "int256",
+            "name": "v",
+            "type": "int256"
+          },
+          {
+            "internalType": "int256",
+            "name": "lam",
+            "type": "int256"
+          }
+        ],
+        "internalType": "struct JDM.MertonInput",
+        "name": "_params",
+        "type": "tuple"
+      }
+    ],
+    "name": "delta_MERTON_PUT",
+    "outputs": [
+      {
+        "internalType": "int256",
+        "name": "delta",
+        "type": "int256"
+      }
+    ],
+    "stateMutability": "view",
+    "type": "function"
+  },
+  {
+    "inputs": [
+      {
+        "internalType": "address",
+        "name": "pair",
+        "type": "address"
+      },
+      {
+        "internalType": "uint256",
+        "name": "ID",
+        "type": "uint256"
+      },
+      {
+        "internalType": "uint256",
+        "name": "feeAmount",
+        "type": "uint256"
+      },
+      {
+        "components": [
+          {
+            "internalType": "address",
+            "name": "tokenA",
+            "type": "address"
+          },
+          {
+            "internalType": "address",
+            "name": "tokenB",
+            "type": "address"
+          },
+          {
+            "internalType": "uint256",
+            "name": "tokenA_balance",
+            "type": "uint256"
+          },
+          {
+            "internalType": "uint256",
+            "name": "tokenB_balance",
+            "type": "uint256"
+          },
+          {
+            "internalType": "uint256",
+            "name": "amount",
+            "type": "uint256"
+          },
+          {
+            "internalType": "uint256",
+            "name": "expiry",
+            "type": "uint256"
+          },
+          {
+            "internalType": "uint256",
+            "name": "fees",
+            "type": "uint256"
+          },
+          {
+            "internalType": "uint256",
+            "name": "perDay",
+            "type": "uint256"
+          },
+          {
+            "internalType": "uint256",
+            "name": "hedgeFee",
+            "type": "uint256"
+          },
+          {
+            "internalType": "uint256",
+            "name": "lastHedgeTimeStamp",
+            "type": "uint256"
+          },
+          {
+            "components": [
+              {
+                "internalType": "int256",
+                "name": "K",
+                "type": "int256"
+              },
+              {
+                "internalType": "int256",
+                "name": "T",
+                "type": "int256"
+              },
+              {
+                "internalType": "int256",
+                "name": "r",
+                "type": "int256"
+              },
+              {
+                "internalType": "int256",
+                "name": "sigma",
+                "type": "int256"
+              },
+              {
+                "internalType": "int256",
+                "name": "m",
+                "type": "int256"
+              },
+              {
+                "internalType": "int256",
+                "name": "v",
+                "type": "int256"
+              },
+              {
+                "internalType": "int256",
+                "name": "lam",
+                "type": "int256"
+              }
+            ],
+            "internalType": "struct JDM.JDMOptionParams",
+            "name": "parameters",
+            "type": "tuple"
+          }
+        ],
+        "internalType": "struct JDM.JDM_Call_params",
+        "name": "_params",
+        "type": "tuple"
+      }
+    ],
+    "name": "editJDM_CALL_params",
+    "outputs": [
+      {
+        "internalType": "bool",
+        "name": "",
+        "type": "bool"
+      }
+    ],
+    "stateMutability": "nonpayable",
+    "type": "function"
+  },
+  {
+    "inputs": [
+      {
+        "internalType": "address",
+        "name": "pair",
+        "type": "address"
+      },
+      {
+        "internalType": "uint256",
+        "name": "ID",
+        "type": "uint256"
+      },
+      {
+        "internalType": "uint256",
+        "name": "feeAmount",
+        "type": "uint256"
+      },
+      {
+        "components": [
+          {
+            "internalType": "address",
+            "name": "tokenA",
+            "type": "address"
+          },
+          {
+            "internalType": "address",
+            "name": "tokenB",
+            "type": "address"
+          },
+          {
+            "internalType": "uint256",
+            "name": "tokenA_balance",
+            "type": "uint256"
+          },
+          {
+            "internalType": "uint256",
+            "name": "tokenB_balance",
+            "type": "uint256"
+          },
+          {
+            "internalType": "uint256",
+            "name": "amount",
+            "type": "uint256"
+          },
+          {
+            "internalType": "uint256",
+            "name": "expiry",
+            "type": "uint256"
+          },
+          {
+            "internalType": "uint256",
+            "name": "fees",
+            "type": "uint256"
+          },
+          {
+            "internalType": "uint256",
+            "name": "perDay",
+            "type": "uint256"
+          },
+          {
+            "internalType": "uint256",
+            "name": "hedgeFee",
+            "type": "uint256"
+          },
+          {
+            "internalType": "uint256",
+            "name": "lastHedgeTimeStamp",
+            "type": "uint256"
+          },
+          {
+            "components": [
+              {
+                "internalType": "int256",
+                "name": "K",
+                "type": "int256"
+              },
+              {
+                "internalType": "int256",
+                "name": "T",
+                "type": "int256"
+              },
+              {
+                "internalType": "int256",
+                "name": "r",
+                "type": "int256"
+              },
+              {
+                "internalType": "int256",
+                "name": "sigma",
+                "type": "int256"
+              },
+              {
+                "internalType": "int256",
+                "name": "m",
+                "type": "int256"
+              },
+              {
+                "internalType": "int256",
+                "name": "v",
+                "type": "int256"
+              },
+              {
+                "internalType": "int256",
+                "name": "lam",
+                "type": "int256"
+              }
+            ],
+            "internalType": "struct JDM.JDMOptionParams",
+            "name": "parameters",
+            "type": "tuple"
+          }
+        ],
+        "internalType": "struct JDM.JDM_Put_params",
+        "name": "_params",
+        "type": "tuple"
+      }
+    ],
+    "name": "editJDM_PUT_params",
+    "outputs": [
+      {
+        "internalType": "bool",
+        "name": "",
+        "type": "bool"
+      }
+    ],
+    "stateMutability": "nonpayable",
+    "type": "function"
+  },
+  {
+    "inputs": [
+      {
+        "internalType": "address",
+        "name": "tokenIn",
+        "type": "address"
+      },
+      {
+        "internalType": "uint128",
+        "name": "amountIn",
+        "type": "uint128"
+      },
+      {
+        "internalType": "uint32",
+        "name": "secondsAgo",
+        "type": "uint32"
+      },
+      {
+        "internalType": "address",
+        "name": "tokenOut",
+        "type": "address"
+      }
+    ],
+    "name": "estimateAmountOut",
+    "outputs": [
+      {
+        "internalType": "uint256",
+        "name": "amountOut",
+        "type": "uint256"
+      }
+    ],
+    "stateMutability": "view",
+    "type": "function"
+  },
+  {
+    "inputs": [
+      {
+        "internalType": "address",
+        "name": "pair",
+        "type": "address"
+      },
+      {
+        "internalType": "address",
+        "name": "user",
+        "type": "address"
+      },
+      {
+        "internalType": "uint256",
+        "name": "ID",
+        "type": "uint256"
+      }
+    ],
+    "name": "getHedgeAvailability",
+    "outputs": [
+      {
+        "internalType": "bool",
+        "name": "possible",
+        "type": "bool"
+      }
+    ],
+    "stateMutability": "view",
+    "type": "function"
+  },
+  {
+    "inputs": [
+      {
+        "internalType": "address",
+        "name": "",
+        "type": "address"
+      },
+      {
+        "internalType": "address",
+        "name": "",
+        "type": "address"
+      }
+    ],
+    "name": "getPair",
+    "outputs": [
+      {
+        "internalType": "address",
+        "name": "",
+        "type": "address"
+      }
+    ],
+    "stateMutability": "view",
+    "type": "function"
+  },
+  {
+    "inputs": [
+      {
+        "internalType": "address",
+        "name": "pair",
+        "type": "address"
+      },
+      {
+        "internalType": "uint256",
+        "name": "ID",
+        "type": "uint256"
+      }
+    ],
+    "name": "getPairUserAddress",
+    "outputs": [
+      {
+        "internalType": "address",
+        "name": "",
+        "type": "address"
+      }
+    ],
+    "stateMutability": "view",
+    "type": "function"
+  },
+  {
+    "inputs": [
+      {
+        "internalType": "address",
+        "name": "pair",
+        "type": "address"
+      }
+    ],
+    "name": "getPairUsers",
+    "outputs": [
+      {
+        "internalType": "uint256",
+        "name": "",
+        "type": "uint256"
+      }
+    ],
+    "stateMutability": "view",
+    "type": "function"
+  },
+  {
+    "inputs": [
+      {
+        "internalType": "address",
+        "name": "token0",
+        "type": "address"
+      },
+      {
+        "internalType": "address",
+        "name": "token1",
+        "type": "address"
+      }
+    ],
+    "name": "getPrice",
+    "outputs": [
+      {
+        "internalType": "int256",
+        "name": "",
+        "type": "int256"
+      }
+    ],
+    "stateMutability": "view",
+    "type": "function"
+  },
+  {
+    "inputs": [
+      {
+        "internalType": "uint256",
+        "name": "perDay",
+        "type": "uint256"
+      }
+    ],
+    "name": "getTimeStampInterval",
+    "outputs": [
+      {
+        "internalType": "uint256",
+        "name": "",
+        "type": "uint256"
+      }
+    ],
+    "stateMutability": "pure",
+    "type": "function"
+  },
+  {
+    "inputs": [
+      {
+        "components": [
+          {
+            "internalType": "int256",
+            "name": "S",
+            "type": "int256"
+          },
+          {
+            "internalType": "int256",
+            "name": "K",
+            "type": "int256"
+          },
+          {
+            "internalType": "int256",
+            "name": "T",
+            "type": "int256"
+          },
+          {
+            "internalType": "int256",
+            "name": "r",
+            "type": "int256"
+          },
+          {
+            "internalType": "int256",
+            "name": "sigma",
+            "type": "int256"
+          },
+          {
+            "internalType": "int256",
+            "name": "m",
+            "type": "int256"
+          },
+          {
+            "internalType": "int256",
+            "name": "v",
+            "type": "int256"
+          },
+          {
+            "internalType": "int256",
+            "name": "lam",
+            "type": "int256"
+          }
+        ],
+        "internalType": "struct JDM.MertonInput",
+        "name": "_params",
+        "type": "tuple"
+      }
+    ],
+    "name": "pMERTON_PUT",
+    "outputs": [
+      {
+        "internalType": "int256",
+        "name": "p",
+        "type": "int256"
+      }
+    ],
+    "stateMutability": "view",
+    "type": "function"
+  },
+  {
+    "inputs": [],
+    "name": "swapRouter",
+    "outputs": [
+      {
+        "internalType": "contract ISwapRouter",
+        "name": "",
+        "type": "address"
+      }
+    ],
+    "stateMutability": "view",
+    "type": "function"
+  },
+  {
+    "inputs": [
+      {
+        "internalType": "uint256",
+        "name": "price",
+        "type": "uint256"
+      }
+    ],
+    "name": "testSetPrice",
+    "outputs": [
+      {
+        "internalType": "uint256",
+        "name": "",
+        "type": "uint256"
+      }
+    ],
+    "stateMutability": "nonpayable",
+    "type": "function"
+  },
+  {
+    "inputs": [],
+    "name": "test_PriceNow",
+    "outputs": [
+      {
+        "internalType": "uint256",
+        "name": "",
+        "type": "uint256"
+      }
+    ],
+    "stateMutability": "view",
+    "type": "function"
+  },
+  {
+    "inputs": [
+      {
+        "internalType": "address",
+        "name": "user",
+        "type": "address"
+      }
+    ],
+    "name": "userIDlength",
+    "outputs": [
+      {
+        "internalType": "uint256",
+        "name": "",
+        "type": "uint256"
+      }
+    ],
+    "stateMutability": "view",
+    "type": "function"
+  }
+]
