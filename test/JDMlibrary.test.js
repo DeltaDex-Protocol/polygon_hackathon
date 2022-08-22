@@ -42,7 +42,7 @@ describe("Test math libraries ", () => {
     console.log("stats library:", Statslib.address);
 
     // @dev deploy Jump Diffusion model library
-    const JDM = await ethers.getContractFactory("JDMtest", {
+    const JDM = await ethers.getContractFactory("JDM", {
       signer: signers[0],
       libraries: {
         Statistics: Statslib.address,

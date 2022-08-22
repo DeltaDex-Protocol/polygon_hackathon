@@ -7,7 +7,7 @@ import "./math/Statistics.sol";
 /// @author Volatility Smilers @Polygon Buidl It Hackathon
 /// @notice Replicates a curved option that hedges IL on Uniswap V2
 
-library BSC {
+contract BSC {
     using PRBMathSD59x18 for int256;
 
     struct BSCurvedParams {

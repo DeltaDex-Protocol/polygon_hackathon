@@ -4,7 +4,6 @@ const { parseUnits } = require("ethers/lib/utils");
 const { ethers, network } = require("hardhat");
 
 describe("Test math libraries ", () => {
-
   // input parameters
   let S = "100";
   let K = "100";
@@ -23,35 +22,34 @@ describe("Test math libraries ", () => {
   let BSlib;
 
   it("Should deploy libraries", async () => {
-    
-  signers = await ethers.getSigners();
+    signers = await ethers.getSigners();
 
-  const Statistics = await ethers.getContractFactory("Statistics");
-  Statslib = await Statistics.deploy();
-  await Statslib.deployed();
-  console.log("stats library:", Statslib.address);
+    const Statistics = await ethers.getContractFactory("Statistics");
+    Statslib = await Statistics.deploy();
+    await Statslib.deployed();
+    console.log("stats library:", Statslib.address);
 
-  // @dev deploy Black Scholes model library
-  const BS = await ethers.getContractFactory("BStest", {
-    signer: signers[0],
-    libraries: {
-      Statistics: Statslib.address,
-    },
-  });
-  BSlib = await BS.deploy();
-  await BSlib.deployed();
-  console.log("BS library:", BSlib.address);
+    // @dev deploy Black Scholes model library
+    const BS = await ethers.getContractFactory("BS", {
+      signer: signers[0],
+      libraries: {
+        Statistics: Statslib.address,
+      },
+    });
+    BSlib = await BS.deploy();
+    await BSlib.deployed();
+    console.log("BS library:", BSlib.address);
   });
 
   it("Should calculate D1", async () => {
-    let D1 = await BSlib.D1(S,K,r,sigma,T);
+    let D1 = await BSlib.D1(S, K, r, sigma, T);
     D1 = ethers.BigNumber.from(D1);
     console.log(D1);
   });
 
   it("Should calculate D2", async () => {
-    let D1 = await BSlib.D1(S,K,r,sigma,T);
-    let D2 = await BSlib.D2(D1,sigma,T);
+    let D1 = await BSlib.D1(S, K, r, sigma, T);
+    let D2 = await BSlib.D2(D1, sigma, T);
 
     D2 = ethers.BigNumber.from(D2);
     console.log(D2);
@@ -114,5 +112,4 @@ describe("Test math libraries ", () => {
 
     console.log(delta);
   });
-
 });

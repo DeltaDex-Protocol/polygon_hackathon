@@ -7,7 +7,7 @@ import "./math/Statistics.sol";
 /// @author Volatility Smilers @Polygon Buidl It Hackathon
 /// @notice calculate option contract price and delta using JDM model
 
-library JDM {
+contract JDM {
     using PRBMathSD59x18 for int256;
 
     /// @notice JDMOptionParams
